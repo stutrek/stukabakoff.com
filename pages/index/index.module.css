@@ -1,0 +1,94 @@
+.indexPage {
+    font-size: 0.75vw;
+    justify-content: space-between;
+    padding: 4vh 0 0;
+}
+.name {
+    font-size: 10em;
+    margin: 0;
+}
+
+.blurb {
+    width: 35em;
+    max-width: 90vw;
+    line-height: 1.5;
+    font-size: 1.75em;
+    text-align: center;
+}
+.treeSpace {
+    min-height: 25em;
+}
+
+.logos {
+    display: flex;
+    font-size: 1.75em;
+    padding: 3em;
+}
+
+.logo {
+    width: 12em;
+    text-align: center;
+}
+
+.logo svg {
+    width: 8em;
+    height: 8em;
+    display: block;
+    margin: 0 auto 1em;
+    max-width: 120px;
+    max-height: 120px;
+}
+
+.logo svg * {
+    fill: #666;
+    stroke-width: 2px;
+    transition: ease-in-out 300ms fill;
+}
+
+.logo:hover svg * {
+    fill: black;
+}
+
+@media (max-width: 700px) {
+    .indexPage {
+        font-size: 1.25vw;
+    }
+    .blurb {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .indexPage {
+        font-size: 1vw;
+    }
+}
+@media (max-width: 450px) {
+    .indexPage {
+        font-size: 3vw;
+    }
+    .name {
+        font-size: 5em;
+    }
+    .blurb {
+        margin: 1em 0;
+        font-size: 1.75em;
+    }
+    .treeSpace {
+        min-height: 0;
+        flex: 5;
+    }
+    .logos {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .logo {
+        width: 5em;
+        margin: 0;
+    }
+    .logo svg {
+        width: 3em;
+        height: 3em;
+        margin: 0 auto 0.5em;
+    }
+}
