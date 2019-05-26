@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     animation: sky-color 20000ms ease-in-out 0ms infinite;
-
+    opacity: 0.5;
     z-index: -1;
 }
 

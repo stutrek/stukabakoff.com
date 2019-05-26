@@ -16,6 +16,8 @@
 
  */
 
+import tinycolor from 'tinycolor2';
+
 const devicePixelRatio = process.browser ? window.devicePixelRatio : 1;
 
 export default class Tree {
@@ -26,6 +28,10 @@ export default class Tree {
 
         this.width = +this.ctx.canvas.width;
         this.height = +this.ctx.canvas.height;
+
+        this.leafColor = tinycolor(this.leafColorString);
+        this.fruitColor = tinycolor(this.fruitColorString);
+        this.branchColor = tinycolor(this.branchColorString);
     }
 
     frames = [];
@@ -37,10 +43,10 @@ export default class Tree {
     spread = 0.7;
     drawLeaves = true;
     hasFruit = true;
-    leafColor = '#55cc55';
-    fruitColor = '#cc2222';
+    leafColorString = '#55cc55';
+    fruitColorString = '#cc2222';
     leafType = Tree.MEDIUM_LEAVES;
-    branchColor = '#553300';
+    branchColorString = '#553300';
     branchThickness = 13 * devicePixelRatio;
 
     static SMALL_LEAVES = 10 * devicePixelRatio;
@@ -53,6 +59,7 @@ export default class Tree {
 
     frameStart = undefined;
     frameFilled = false;
+    drawsThisFrame = 0;
     async addFrame(cb) {
         if (this.frameStart === undefined) {
             this.frameStart = new Date();
@@ -60,11 +67,13 @@ export default class Tree {
         if (this.frameFilled === false) {
             await cb();
             const timeSoFar = new Date() - this.frameStart;
-            if (timeSoFar > 8) {
+            this.drawsThisFrame++;
+            if (timeSoFar > 8 || this.drawsThisFrame > Tree.DRAWS_PER_FRAME) {
                 this.frameFilled = true;
                 requestAnimationFrame(() => {
                     this.frameFilled = false;
                     this.frameStart = undefined;
+                    this.drawsThisFrame = 0;
                 });
             }
         } else {
@@ -119,7 +128,7 @@ export default class Tree {
                 this.ctx.beginPath();
                 this.ctx.moveTo(0, 0);
                 this.ctx.lineTo(0, -this.height / 9 / (countAtThisDepth * 1.1));
-                this.ctx.strokeStyle = this.branchColor;
+                this.ctx.strokeStyle = this.branchColorString;
                 this.ctx.stroke();
 
                 this.ctx.translate(0, -this.height / 10 / (countAtThisDepth * 1.1));
@@ -165,13 +174,26 @@ export default class Tree {
                 lengthFactor = 10 * devicePixelRatio;
             }
             if (this.hasFruit && Math.random() < 0.05) {
-                this.ctx.fillStyle = this.fruitColor;
+                this.ctx.fillStyle = this.tweakColor(this.fruitColor);
                 lengthFactor = this.leafType;
             } else {
-                this.ctx.fillStyle = this.leafColor;
+                this.ctx.fillStyle = this.tweakColor(this.leafColor);
             }
             this.ctx.fillRect(0, 0, this.leafType, lengthFactor);
             //this.ctx.stroke();
         }
+    }
+
+    tweakColor(color) {
+        const brightness = Math.random() * 15 - 7.5;
+        const spin = Math.random() * 30 - 15;
+        return (
+            '#' +
+            color
+                .clone()
+                .brighten(brightness)
+                .spin(spin)
+                .toHex()
+        );
     }
 }
