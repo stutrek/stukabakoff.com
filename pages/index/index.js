@@ -18,7 +18,7 @@ export default function Blog() {
             </Head>
             <h1 className={styles.name}>Stu Kabakoff</h1>
             <div className={styles.blurb}>
-                Front end engineer with a drive for simplicity and performance. Currently developing
+                Front end engineer with a drive for simplicity and performance. Currently writing
                 software for 911 dispatchers and first responders at Mark43.
             </div>
             <div className={styles.treeSpace} />

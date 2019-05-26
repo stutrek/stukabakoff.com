@@ -7,6 +7,9 @@
     Developer     : Sameer Borate: http://codediesel.com
     Web Site      : http://codediesel.com
 
+    taken from here: https://www.codediesel.com/javascript/drawing-trees-in-canvas/
+    Tweaked for speed, appearance, and style.
+
  */
 
 const devicePixelRatio = process.browser ? window.devicePixelRatio : 1;
@@ -40,17 +43,25 @@ export default class Tree {
     static MEDIUM_LEAVES = 200 * devicePixelRatio;
     static BIG_LEAVES = 500 * devicePixelRatio;
     static THIN_LEAVES = 900 * devicePixelRatio;
-    static DRAWS_PER_FRAME = 300;
+    static DRAWS_PER_FRAME = 60;
 
     animating = false;
 
-    countThisFrame = 0;
+    frameStart = undefined;
+    frameFilled = false;
     async addFrame(cb) {
-        if (this.countThisFrame < Tree.DRAWS_PER_FRAME) {
+        if (this.frameStart === undefined) {
+            this.frameStart = new Date();
+        }
+        if (this.frameFilled === false) {
             await cb();
-            this.countThisFrame++;
-            if (this.countThisFrame === Tree.DRAWS_PER_FRAME) {
-                requestAnimationFrame(() => (this.countThisFrame = 0));
+            const timeSoFar = new Date() - this.frameStart;
+            if (timeSoFar > 8) {
+                this.frameFilled = true;
+                requestAnimationFrame(() => {
+                    this.frameFilled = false;
+                    this.frameStart = undefined;
+                });
             }
         } else {
             return new Promise(resolve => {
@@ -131,7 +142,7 @@ export default class Tree {
                     await this.branch(depth + 1);
                     this.ctx.restore();
                 });
-                if (depth < 2) {
+                if (depth < 3) {
                     await this.addFrame(async () => {
                         this.ctx.save();
                         this.ctx.rotate(-0.5);
