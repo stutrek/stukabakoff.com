@@ -1,7 +1,7 @@
 .indexPage {
     font-size: 0.75vw;
     justify-content: space-between;
-    padding: 4vh 0 0;
+    padding: 4vh 0;
 }
 .name {
     font-size: 10em;
@@ -49,6 +49,12 @@
     fill: black;
 }
 
+@media (max-width: 1100px) {
+    .indexPage {
+        font-size: 1vw;
+    }
+}
+
 @media (max-width: 700px) {
     .indexPage {
         font-size: 1.25vw;
@@ -58,11 +64,6 @@
     }
 }
 
-@media (max-width: 1100px) {
-    .indexPage {
-        font-size: 1vw;
-    }
-}
 @media (max-width: 450px) {
     .indexPage {
         font-size: 3vw;

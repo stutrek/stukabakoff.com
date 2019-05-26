@@ -5,6 +5,10 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 a {
     color: black;
     text-decoration: none;

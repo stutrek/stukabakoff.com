@@ -6,17 +6,18 @@
     bottom: 0;
     right: 0;
     z-index: -1;
+    overflow: hidden;
 }
 
 .treeCanvas {
     margin-top: 0vh;
     width: 100vw;
     height: 66vh;
+    position: relative;
 }
 
 .hill {
     position: absolute;
-    z-index: -1;
     top: 72vh;
     bottom: 0;
     width: 100%;
