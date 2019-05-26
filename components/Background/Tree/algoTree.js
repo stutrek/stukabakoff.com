@@ -8,7 +8,11 @@
     Web Site      : http://codediesel.com
 
     taken from here: https://www.codediesel.com/javascript/drawing-trees-in-canvas/
-    Tweaked for speed, appearance, and style.
+    * added a third branch to the first few layers
+    * made it animate
+    * made colors params
+    * added fruit
+    * tweaked branch placement to remove rough joints
 
  */
 
@@ -156,12 +160,13 @@ export default class Tree {
             }
         } else if (this.drawLeaves) {
             // Now that we have done drawing branches, draw the leaves
-            var lengthFactor = 200 * devicePixelRatio;
+            var lengthFactor = 300 * devicePixelRatio;
             if (this.leafType === Tree.THIN_LEAVES) {
                 lengthFactor = 10 * devicePixelRatio;
             }
             if (this.hasFruit && Math.random() < 0.05) {
                 this.ctx.fillStyle = this.fruitColor;
+                lengthFactor = this.leafType;
             } else {
                 this.ctx.fillStyle = this.leafColor;
             }
