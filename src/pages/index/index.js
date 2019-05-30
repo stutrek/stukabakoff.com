@@ -1,6 +1,8 @@
+import React from 'react';
+
 import Layout from '../../components/Layout/index.js';
-import Link from 'next/link';
-import Head from 'next/head';
+import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
 
 import GithubLogo from '../../assets/svg/github.svg';
 import InstagramLogo from '../../assets/svg/instagram.svg';
@@ -13,9 +15,9 @@ import styles from './index.module.css';
 export default function Blog() {
     return (
         <Layout centered={true} className={styles.indexPage}>
-            <Head>
+            <Helmet>
                 <title>Stu Kabakoff</title>
-            </Head>
+            </Helmet>
             <h1 className={styles.name}>Stu Kabakoff</h1>
             <div className={styles.blurb}>
                 Front end engineer with a drive for simplicity and performance. Currently writing

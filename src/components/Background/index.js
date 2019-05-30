@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Tree from './Tree';
 import Hill from './Hill';
 import Sky from './Sky';

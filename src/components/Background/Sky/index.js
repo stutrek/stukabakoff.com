@@ -1,4 +1,4 @@
-import { useRef, useLayoutEffect } from 'react';
+import React from 'react';
 
 import styles from './sky.module.css';
 

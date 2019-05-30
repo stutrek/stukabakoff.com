@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:12-alpine
 
 RUN npm install -g yarn
 
@@ -13,4 +13,5 @@ RUN yarn install
 RUN yarn build
 
 EXPOSE 80
-CMD yarn start -p 80
+
+CMD yarn serve -p 80
