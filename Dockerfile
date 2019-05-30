@@ -14,4 +14,4 @@ RUN yarn build
 
 EXPOSE 80
 
-CMD yarn serve -p 80
+CMD yarn dokku

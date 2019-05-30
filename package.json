@@ -32,6 +32,7 @@
         "format": "prettier --write src/**/*.{js,jsx}",
         "start": "npm run develop",
         "serve": "gatsby serve",
+        "dokku": "gatsby serve -p 80",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
     },
     "repository": {
