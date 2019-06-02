@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Layout from '../../components/Layout/index.js';
-import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
 import Face from '../../assets/svg/self.svg';
