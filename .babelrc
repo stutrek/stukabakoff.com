@@ -1,0 +1,22 @@
+{
+	"presets": [[
+		"next/babel", {
+			"preset-env": {
+				"targets": "last 2 Chrome versions and node 14"
+			}
+		}]
+	],
+	"plugins": [
+		["inline-react-svg",
+		{
+			"svgo": {
+				"plugins": [
+					{
+						"name": "removeViewBox",
+						"active": false
+					}
+				]
+			}
+		}]
+	]
+}
