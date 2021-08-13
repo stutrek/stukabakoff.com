@@ -21,7 +21,7 @@ export default function Home() {
                     name="description"
                     content="Code, art, and other hobbies by Stu Kabakoff"
                 />
-                <link rel="icon" href="/public/svg/self.png" />
+                <link rel="icon" href="/self.png" />
             </Head>
             <div className={styles.face}>
                 <Face />
