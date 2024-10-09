@@ -1,0 +1,89 @@
+.container {
+    background-color: white;
+    display: grid;
+    grid-template: 
+        "a b"
+        "a c"
+        "a d";
+    grid-gap: 1.5em 4em;
+    margin: 0 auto;
+    width: auto;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    inset: 0;
+}
+
+@media (max-width: 750px) {
+  .container {
+     grid-template: 
+        "a"
+        "b"
+        "c"
+        "d";
+  }
+}
+
+.name {
+    grid-area: b;
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+}
+.face {
+    text-align: center;
+    grid-area: a;
+}
+.face img {
+    width: 15em;
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    grid-area: c;
+    width: auto;
+}
+.logo {
+    text-align: center;
+    display: block;
+    padding: 0 1em 0 0 ;
+}
+
+.logo img {
+    width: 4em;
+    height: 4em;
+    display: block;
+    opacity: 0.5;
+    transition: ease-in-out 300ms opacity;
+    transform: scale(1);
+}
+
+.logo:hover img {
+    opacity: 1;
+}
+
+.logo:focus img {
+    animation: attention 1200ms ease-in-out;
+}
+
+.writing {
+    grid-area: d;
+}
+.writing h2 {
+    margin-top: 0;
+}
+.writing h3 {
+    margin: 0;
+}
+
+@keyframes attention {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(16);
+        opacity: 0;
+    }
+}
