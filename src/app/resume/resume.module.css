@@ -1,0 +1,45 @@
+.container {
+	margin: 0 auto;
+	max-width: 43em;
+	padding: 0 1.5em;
+}
+
+.header {
+	display: grid;
+	grid-template:
+	"a b"
+	"a c";
+	align-content: start;
+	justify-content: start;
+	border-bottom: 1px solid var(--light-grey);
+	padding: 20px 0;
+}
+
+.face {
+	grid-area: a;
+	opacity: var(--face-opacity);
+}
+.header img {
+	height: 100px;
+	width: 100px;
+}
+.header h1 {
+	margin: 0;
+}
+.header p {
+	margin: 0 0 1.2em 0;
+}
+.resume {
+	line-height: 1.4;
+}
+.resume ul {
+	padding: 0;
+}
+.resume li {
+	list-style-type: circle;
+	margin-bottom: 0.2em;
+}
+.resume h3:not(:first-of-type) {
+	padding: 0.75em 0 0;
+	border-top: 1px solid var(--light-grey)
+}

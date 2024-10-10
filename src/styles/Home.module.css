@@ -1,6 +1,5 @@
 
 .container {
-    background-color: var(--background);
     display: grid;
     grid-template: 
         "a b"
@@ -32,6 +31,7 @@
 .face {
     text-align: center;
     grid-area: a;
+    opacity: var(--face-opacity);
 }
 .face img {
     width: 15em;
@@ -41,10 +41,25 @@
 .icons {
     display: flex;
     justify-content: left;
+    align-items: center;
     grid-area: c;
     width: auto;
     padding: 0 20px;
 }
+
+.icons a {
+    opacity: 0.5;
+    transition: ease-in-out 300ms opacity;
+    transform: scale(1);
+}
+.icons a:hover {
+    opacity: 1;
+
+}
+.icons a:focus img {
+    animation: attention 1200ms ease-in-out;
+}
+
 .logo {
     text-align: center;
     display: block;
@@ -55,17 +70,7 @@
     width: 2em;
     height: 2em;
     display: block;
-    opacity: 0.5;
-    transition: ease-in-out 300ms opacity;
-    transform: scale(1);
-}
 
-.logo:hover img {
-    opacity: 1;
-}
-
-.logo:focus img {
-    animation: attention 1200ms ease-in-out;
 }
 
 .writing {

@@ -57,6 +57,9 @@ export default function Home() {
                     >
                         <img src={linkedInLogo.src} alt="LinkedIn" />
                     </a>
+                    <a className={styles.resume} href="/resume">
+                        Resume
+                    </a>
                 </div>
                 <div className={styles.writing}>
                     <Text />
