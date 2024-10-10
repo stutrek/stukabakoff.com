@@ -1,6 +1,17 @@
+## Notable Open Source
+
+### [ScrollMonitor](https://github.com/stutrek/scrollmonitor)
+
+A library that provides events when elements enter and exit the viewport. It's significantly faster and simpler than IntersectionObserver.
+
+### [React Multi Page Form](https://stutrek.github.io/react-multi-page-form/)
+
+A toolset for managing multiple page forms.
+
 ## Technical Writing
 
-### [Managing the Complexty of Multiple Page Forms](asdf)
+
+### Managing the Complexty of Multiple Page Forms (coming soon)
 
 This article explores effective strategies for designing flexible, maintainable multi-page forms using graph and sequence models using tools like React Multi Page Form.
 

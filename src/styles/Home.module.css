@@ -73,10 +73,11 @@
     padding: 0 20px;
     grid-area: d;
 }
-.writing h2 {
+.writing h2:first-child {
     margin-top: 0;
 }
 .writing h3 {
+    color: #333333;
     margin: 0;
 }
 .container p {
