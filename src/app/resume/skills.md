@@ -24,7 +24,7 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | Canvas2D              | ★★★★★      | Particularly excited for OffscreenCanvas in workers.   |
 | Paper.js              | ★★★★★      | Unmatched for vector math, ok for rendering.           |
 | GraphViz              | ★★★★★      | A good layout engine.                                  |
-| ELK                   | ★★★★★      | The best modern tool for automated layouts.            |
+| Eclipse Layout Kernel | ★★★★★      | The best modern tool for automated layouts.            |
 | Mermaid.js            | ★★★★       | Good for Markdown.                                     |
 | Bezier Curves         | ★★★★★      | A core part of all visualization.                      |
 | Rough.js              | ★★★★★      | Deep in the depths at Eraser.                          |

@@ -1,4 +1,4 @@
-import Skills from './skills.mdx';
+import Skills from './skills.md';
 import TextFromHome from '../text.md';
 import Resume from './resume.mdx';
 import face from '../../../public/svg/self.svg';

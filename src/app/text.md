@@ -6,7 +6,7 @@ A library that provides events when elements enter and exit the viewport. It's s
 
 ### [Dexie Encrypted](https://github.com/dfahlander/dexie-encrypted)
 
-Transparently add encryption to a IndexedDB + Dexie database.
+Transparently add encryption to an IndexedDB + Dexie database.
 
 ### [React Multi Page Form](https://stutrek.github.io/react-multi-page-form/)
 
