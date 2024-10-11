@@ -2,6 +2,8 @@
 	margin: 0 auto;
 	max-width: 43em;
 	padding: 0 1.5em;
+
+	--star-shadow: #463901;
 }
 
 .header {
@@ -41,5 +43,37 @@
 }
 .resume h3:not(:first-of-type) {
 	padding: 0.75em 0 0;
-	border-top: 1px solid var(--light-grey)
+	border-top: 1px solid var(--light-grey);
+}
+
+.container table {
+	border-collapse: collapse;
+}
+.container td, .container th {
+	vertical-align: top;
+	padding: 0 0.5em 0.25em;
+}
+.container tr:has(strong) td {
+	border-top: 1px solid var(--light-grey);
+}
+.container td strong {
+	margin-top: 0.25em;
+	display: block;
+}
+.container td:first-child {
+	white-space: nowrap;
+}
+.container td:nth-child(2) {
+	letter-spacing: 1px;
+	color: #e3c333;
+	text-shadow: 
+		0.75px 0.75px 0.25px var(--star-shadow), 
+		-0.75px -0.75px 0.25px var(--star-shadow),
+		0.75px -0.75px 0.25px var(--star-shadow),
+		-0.75px 0.75px 0.25px var(--star-shadow),
+		0 1.1px 0.25px var(--star-shadow), 
+		1.1px 0px 0.25px var(--star-shadow),
+		0 -1.1px 0.25px var(--star-shadow), 
+		-1.1px 0px 0.25px var(--star-shadow)
+		;
 }
