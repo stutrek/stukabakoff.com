@@ -19,7 +19,11 @@ export default function Page() {
                 </div>
                 <h1>Stu Kabakoff</h1>
                 <div>
-                    <p>Software engineer with 20 years experience.</p>
+                    <p>
+                        Software engineer with 20 years experience.
+                        <br />
+                        stukabakoff@gmail.com
+                    </p>
                 </div>
             </div>
             <div className={styles.resume}>

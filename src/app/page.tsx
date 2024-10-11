@@ -21,10 +21,7 @@ export default function Home() {
                 </div>
                 <div className={styles.name}>
                     <h1>Stu Kabakoff</h1>
-                    <p>
-                        Software engineer with 20 years experience, technical
-                        writer.
-                    </p>
+                    <p>Software engineer with 20 years experience.</p>
                 </div>
                 <div className={styles.icons}>
                     <a
