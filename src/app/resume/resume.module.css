@@ -100,7 +100,8 @@
         padding: 0.125em 0;
     }
 
-    .container td:nth-child(2) {
+    .container td:nth-child(2),
+    .container th:nth-child(2) {
         position: absolute;
         inset: 2px 0 auto auto;
         border: none;
