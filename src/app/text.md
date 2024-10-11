@@ -16,7 +16,7 @@ A toolset for managing multiple page forms.
 
 ## Technical Writing
 
-### Managing the Complexty of Multiple Page Forms (coming soon)
+### Managing the Complexity of Multiple Page Forms (coming soon)
 
 This article explores effective strategies for designing flexible, maintainable multi-page forms using graph and sequence models using tools like React Multi Page Form.
 
