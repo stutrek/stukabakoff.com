@@ -20,6 +20,7 @@ html, body {
         Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     background-color: var(--background);
     color: var(--text);
+    height: 100%;
 }
 
 
@@ -35,4 +36,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.centered {
+    display: flex;
+    height: 100%;
+    justify-content: safe center;
+    align-items: safe center;
+    overflow: auto;
 }

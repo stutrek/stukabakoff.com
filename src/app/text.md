@@ -1,15 +1,20 @@
-## Notable Open Source
+## Open Source Libraries
 
 ### [ScrollMonitor](https://github.com/stutrek/scrollmonitor)
 
 A library that provides events when elements enter and exit the viewport. It's significantly faster and simpler than IntersectionObserver.
 
+### [Dexie Encrypted](https://github.com/dfahlander/dexie-encrypted)
+
+Transparently add encryption to a IndexedDB + Dexie database.
+
 ### [React Multi Page Form](https://stutrek.github.io/react-multi-page-form/)
 
 A toolset for managing multiple page forms.
 
-## Technical Writing
+----
 
+## Technical Writing
 
 ### Managing the Complexty of Multiple Page Forms (coming soon)
 

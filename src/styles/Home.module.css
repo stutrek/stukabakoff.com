@@ -6,12 +6,10 @@
         "a c"
         "a d";
     grid-gap: 1.25em 2em;
-    margin: 0 auto 0;
     width: auto;
-    justify-content: center;
-    align-content: center;
-    position: absolute;
-    inset: 0;
+    /* justify-content:center; */
+    /* align-content: top; */
+
 }
 
 .name {
@@ -87,6 +85,10 @@
 }
 .container p {
     color: #5f6668
+}
+
+.container hr {
+    display: none;
 }
 
 @keyframes attention {
