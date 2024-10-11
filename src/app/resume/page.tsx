@@ -1,3 +1,5 @@
+import Skills from './skills.mdx';
+import TextFromHome from '../text.md';
 import Resume from './resume.mdx';
 import face from '../../../public/svg/self.svg';
 
@@ -26,8 +28,14 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-            <div className={styles.resume}>
-                <Resume />
+            <div>
+                <Skills />
+                <hr />
+                <TextFromHome />
+                <hr />
+                <div className={styles.resume}>
+                    <Resume />
+                </div>
             </div>
         </div>
     );

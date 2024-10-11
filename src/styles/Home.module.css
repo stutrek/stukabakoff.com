@@ -1,7 +1,6 @@
-
 .container {
     display: grid;
-    grid-template: 
+    grid-template:
         "a b"
         "a c"
         "a d";
@@ -9,7 +8,6 @@
     width: auto;
     /* justify-content:center; */
     /* align-content: top; */
-
 }
 
 .name {
@@ -23,7 +21,7 @@
 }
 .name p {
     margin: 0;
-    padding: 0.5em 0
+    padding: 0.5em 0;
 }
 
 .face {
@@ -46,13 +44,13 @@
 }
 
 .icons a {
+    color: black;
     opacity: 0.5;
     transition: ease-in-out 300ms opacity;
     transform: scale(1);
 }
 .icons a:hover {
     opacity: 1;
-
 }
 .icons a:focus img {
     animation: attention 1200ms ease-in-out;
@@ -61,14 +59,13 @@
 .logo {
     text-align: center;
     display: block;
-    padding: 0 1em 0 0 ;
+    padding: 0 1em 0 0;
 }
 
 .logo img {
     width: 2em;
     height: 2em;
     display: block;
-
 }
 
 .writing {
@@ -84,7 +81,7 @@
     margin: 0;
 }
 .container p {
-    color: #5f6668
+    color: var(--dark-grey);
 }
 
 .container hr {
@@ -103,23 +100,23 @@
 }
 
 @media (max-width: 750px) {
-  .container {
-     grid-template: 
-        "a"
-        "b"
-        "c"
-        "d";
-    margin: 20px auto 0;
-    transform: none;
-    position: static;
-  }
-  .face img {
-    width: 50%;
-    max-width: 10em;
-  }
-  .icons {
-    justify-content: center;
-  }
+    .container {
+        grid-template:
+            "a"
+            "b"
+            "c"
+            "d";
+        margin: 20px auto 0;
+        transform: none;
+        position: static;
+    }
+    .face img {
+        width: 50%;
+        max-width: 10em;
+    }
+    .icons {
+        justify-content: center;
+    }
 }
 /* @media (min-height: 750px) {
   .container {
@@ -128,8 +125,8 @@
   }
 } */
 @media (max-width: 420px) {
-  .name h1 {
-    text-align: center;
-    font-size: 2.75em;
-  }
+    .name h1 {
+        text-align: center;
+        font-size: 2.75em;
+    }
 }
