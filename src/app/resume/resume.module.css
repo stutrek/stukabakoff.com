@@ -85,6 +85,14 @@
         0 -1.1px 0.25px var(--star-shadow),
         -1.1px 0px 0.25px var(--star-shadow);
 }
+
+@media (prefers-color-scheme: dark) {
+    .container td:nth-child(2) {
+        color: #887008;
+        text-shadow: none;
+    }
+}
+
 .container td:nth-child(3) {
     color: var(--mid-grey);
 }

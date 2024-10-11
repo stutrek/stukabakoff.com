@@ -5,12 +5,14 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | Technology            | Experience | Notes                                                  |
 | :-------------------- | :--------- | :----------------------------------------------------- |
 | TypeScript            | ★★★★★      | Type safety is great.                                  |
-| DOM, SVG, CSS         | ★★★★★      |                                                        |
+| DOM, SVG, CSS         | ★★★★★      | Including modern APIs and styles.                      |
 | **Front End**         |            |                                                        |
 | React                 | ★★★★★      | Love it, but open to other options.                    |
+| Electron              | ★★★★★      | Great for the desktop and reusability.                 |
+| Tailwind              | ★★★★       | Excited to use it again, and for the future it brings. |
 | CSS Modules           | ★★★★★      | A great way to include CSS.                            |
-| Tailwind              | ★★★        | Excited to use it again, and for the future it brings. |
-| Styled Components     | ★★★★       | The API is friendly, but they have drawbacks.          |
+| CSS Preprocessors     | ★★★★★      | Excellent solutions for their place and time.          |
+| Styled Components     | ★★★★       | The API is friendly, but there are drawbacks.          |
 | VSCode Extensions     | ★★★        | Authoring extensions, not using them.                  |
 | React Hook Form       | ★★★★★      | So fast, so easy.                                      |
 | **Browser Data APIs** |            |                                                        |
@@ -30,6 +32,7 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | Rough.js              | ★★★★★      | Deep in the depths at Eraser.                          |
 | Highcharts            | ★★★★★      | Still a great library.                                 |
 | MapBox                | ★★★★★      | High speed with a great API.                           |
+| Color Spaces          | ★★★★★      | oklab, oklch, etc. Great for aesthetics.               |
 | **Build / Dev Tools** |            |                                                        |
 | Node.js               | ★★★★★      | Also excited by Deno and Bun                           |
 | Next.js               | ★★★★★      | Love it, but curious about other options.              |
