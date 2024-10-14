@@ -12,9 +12,10 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | Tailwind              | ★★★★       | Excited to use it again, and for the future it brings. |
 | CSS Modules           | ★★★★★      | A great way to include CSS.                            |
 | CSS Preprocessors     | ★★★★★      | Excellent solutions for their place and time.          |
-| Styled Components     | ★★★★       | The API is friendly, but there are drawbacks.          |
+| Styled Components     | ★★★★       | The API is friendly, with tradeoffs.                   |
 | VSCode Extensions     | ★★★        | Authoring extensions, not using them.                  |
 | React Hook Form       | ★★★★★      | So fast, so easy.                                      |
+| SlateJS               | ★★★★★      | Great low level rich text editor.                      |
 | **Browser Data APIs** |            |                                                        |
 | Workers               | ★★★★★      | Including dedicated, shared, and service workers       |
 | IndexedDB             | ★★★★★      | Best used with libraries such as Dexie.                |
