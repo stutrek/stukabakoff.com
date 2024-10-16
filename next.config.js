@@ -19,6 +19,10 @@ const nextConfig = {
                 source: '/api/collect',
                 destination: 'https://umami.stutrek.com/api/collect',
             },
+            {
+                source: '/api/send',
+                destination: 'https://umami.stutrek.com/api/send',
+            },
         ];
     },
 };

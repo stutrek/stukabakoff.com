@@ -1,17 +1,5 @@
 import '../styles/globals.css';
-
-if (typeof window !== 'undefined') {
-    document.addEventListener('DOMContentLoaded', () => {
-        document.body.addEventListener('click', (event) => {
-            if (window.umami && event.target instanceof HTMLAnchorElement) {
-                const text = event.target.innerText;
-                umami.track('click', {
-                    text,
-                });
-            }
-        });
-    });
-}
+import { Tracking } from './tracking';
 
 export default function MainLayout({
     children,
@@ -35,6 +23,7 @@ export default function MainLayout({
                 data-website-id="a532bc4e-7350-43af-b105-b2f31da13b49"
                 src="/umami.js"
             />
+            <Tracking />
         </html>
     );
 }
