@@ -1,5 +1,18 @@
 import '../styles/globals.css';
 
+if (typeof window !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.addEventListener('click', (event) => {
+            if (window.umami && event.target instanceof HTMLAnchorElement) {
+                const text = event.target.innerText;
+                umami.track('click', {
+                    text,
+                });
+            }
+        });
+    });
+}
+
 export default function MainLayout({
     children,
 }: Readonly<{
