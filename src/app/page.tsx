@@ -3,6 +3,7 @@ import face from '../../public/svg/self.svg';
 import githubLogo from '../../public/svg/github.svg';
 import instagramLogo from '../../public/svg/instagram.svg';
 import linkedInLogo from '../../public/svg/linkedin.svg';
+import resumeIcon from '../../public/resume-icon.png';
 
 import Text from './text.md';
 
@@ -54,11 +55,20 @@ export default function Home() {
                     >
                         <img src={linkedInLogo.src} alt="LinkedIn" />
                     </a>
-                    <a className={styles.resume} href="/resume">
-                        Resume
-                    </a>
                 </div>
                 <div className={styles.writing}>
+                    <h2>
+                        <a href="/resume">
+                            <img
+                                className={styles.cvIcon}
+                                src={resumeIcon.src}
+                                width={resumeIcon.width}
+                                height={resumeIcon.height}
+                                alt=""
+                            />
+                            Full Resume
+                        </a>
+                    </h2>
                     <Text />
                 </div>
             </div>

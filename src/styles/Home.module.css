@@ -99,6 +99,15 @@
     }
 }
 
+.cvIcon {
+    height: auto;
+    width: 25px;
+    margin-left: -30px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    opacity: 0.5;
+}
+
 @media (max-width: 750px) {
     .container {
         grid-template:

@@ -12,7 +12,7 @@ Transparently add encryption to an IndexedDB + Dexie database.
 
 A toolset for managing multiple page forms.
 
-----
+---
 
 ## Technical Writing
 
