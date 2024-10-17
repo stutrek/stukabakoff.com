@@ -16,7 +16,7 @@ A toolset for managing multiple page forms.
 
 ## Technical Writing
 
-### Managing the Complexity of Multiple Page Forms (coming soon)
+### [Managing the Complexity of Multiple Page Forms](https://www.eraser.io/decision-node/managing-multi-page-forms)
 
 This article explores effective strategies for designing flexible, maintainable multi-page forms using graph and sequence models using tools like React Multi Page Form.
 

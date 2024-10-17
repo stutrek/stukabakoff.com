@@ -69,6 +69,7 @@ export default function Home() {
                             Full Resume
                         </a>
                     </h2>
+                    <i>Open to new opportunities</i>
                     <Text />
                 </div>
             </div>
