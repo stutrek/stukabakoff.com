@@ -59,6 +59,10 @@
     position: relative;
     overflow: hidden;
 }
+.skillsMarker {
+    transform: translateY(350px);
+    height: 0px;
+}
 .skills table {
     margin-bottom: 30px;
 }

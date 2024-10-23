@@ -1,3 +1,4 @@
+'use client';
 import Skills from './skills.md';
 import TextFromHome from '../text.md';
 import Resume from './resume.mdx';
@@ -6,6 +7,15 @@ import face from '../../../public/svg/self.svg';
 import styles from './resume.module.css';
 
 export default function Page() {
+    const handleClick = () => {
+        const skills = document.getElementById('skills') as HTMLInputElement;
+        if (skills.checked) {
+            const marker = document.getElementById('skills-marker');
+            if (marker) {
+                marker.scrollIntoView();
+            }
+        }
+    };
     return (
         <div className={styles.container}>
             <div className={styles.header}>
@@ -29,6 +39,7 @@ export default function Page() {
                 </div>
             </div>
             <div>
+                <div id="skills-marker" className={styles.skillsMarker} />
                 <input
                     type="checkbox"
                     id="skills"
@@ -37,7 +48,9 @@ export default function Page() {
                 <div className={styles.skills}>
                     <Skills />
                     <div className={styles.skillsLabel}>
-                        <label htmlFor="skills">Skills</label>
+                        <label htmlFor="skills" onClick={handleClick}>
+                            Skills
+                        </label>
                     </div>
                 </div>
                 <hr />
