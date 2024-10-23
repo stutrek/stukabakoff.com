@@ -6,6 +6,7 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | :-------------------- | :--------- | :----------------------------------------------------- |
 | TypeScript            | ★★★★★      | Type safety is great.                                  |
 | DOM, SVG, CSS         | ★★★★★      | Including modern APIs and styles.                      |
+| Algorithms            | ★★★★       | Also a necessary part of code reviews.                 |
 | **Front End**         |            |                                                        |
 | React                 | ★★★★★      | Love it, but open to other options.                    |
 | Electron              | ★★★★★      | Great for the desktop and reusability.                 |
@@ -22,7 +23,7 @@ _This is only a selection of the tools and APIs that I have worked with in my 20
 | WebSockets            | ★★★★★      | Great for two way communication.                       |
 | Fetch                 | ★★★★★      | A simple, but a growing API.                           |
 | WebRTC                | ★★★★       | More practical for media than data.                    |
-| File API              | ★★★★★      | Very excited to use local files in a browser.          |
+| File System API       | ★★★★★      | Very excited to use local files in a browser.          |
 | **Visualization**     |            |                                                        |
 | Canvas2D              | ★★★★★      | Particularly excited for OffscreenCanvas in workers.   |
 | Paper.js              | ★★★★★      | Unmatched for vector math, ok for rendering.           |

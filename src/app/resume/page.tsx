@@ -29,7 +29,17 @@ export default function Page() {
                 </div>
             </div>
             <div>
-                <Skills />
+                <input
+                    type="checkbox"
+                    id="skills"
+                    className={styles.skillsCheckbox}
+                />
+                <div className={styles.skills}>
+                    <Skills />
+                    <div className={styles.skillsLabel}>
+                        <label htmlFor="skills">Skills</label>
+                    </div>
+                </div>
                 <hr />
                 <TextFromHome />
                 <hr />

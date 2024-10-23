@@ -4,17 +4,22 @@
 
 _February 2022 - September 2024_
 
-Eraser is a tool for whiteboarding and documentation. The essence of it is a document editor next to a canvas, with integrations going both ways. I was primarily responsible for many parts of the app, and played a role in almost all parts.
+Eraser is a tool for whiteboarding and documentation, the essence of it is a document editor next to a canvas, with integrations going both ways. It has diagram as code features similar to Mermaid. I played a part in nearly every part of the app.
 
+-   Created algorithmic guarantees around z-indexing in O(n) time (text and bound arrows must be over boxes, groups, figures).
+-   Implemented an O(n) algorithm to combine overlapping text features (bold, color, selections, links) to enable syntax highlighting.
+-   Devised an algorithm to divide the whitespace on the canvas into a graph, allowing arrow routing using Djkstra's algorithm.
+-   Implemented canvas-based keyboard navigation with weights for distance and direction in O(n log n) time.
+-   Implemented syncing text editor using changesets.
 -   Developed advanced “diagram as code” features with sophisticated visual layouts for cloud architectures, databases, flowcharts, and sequence diagrams.
--   Implemented a real-time syncing rich text editor using SlateJS and Firebase, enhancing collaborative editing capabilities.
+-   Algorithmically straightened lines and reduced crossings in output from GraphViz.
 -   Optimized high-level architecture to reduce costs and latency, bringing 50th percentile latency down 80%.
 -   Introduced end-to-end testing and visual snapshot testing.
 -   Created AI prompts, frameworks, and workflows for generating diagrams from text, streamlining development and user workflows.
 -   Resolved complex issues related to memory usage, text rendering, and canvas performance, resulting in smoother, sharper user experiences.
 -   Addressed challenges with z-indexing, syncing, and latency during data synchronization on the canvas.
 -   Developed a VSCode extension to render diagrams from code, putting our product where developers already are.
--   Implemented a language server and architecture enabling GUI-based modifications to “diagram as code,” making edits much easier and more natural.
+-   Implemented a language server and architecture enabling GUI-based modifications to diagram as code, making edits much easier and more natural.
 
 ---
 
@@ -37,6 +42,7 @@ _November 2018 - July 2021_
 
 Mark43 develops software for police departments worldwide, including real-time 911 dispatch applications used in dispatch centers and police vehicles.
 
+-   Improved speed and GC pauses by switching many loops from O(n log n) to O(n).
 -   Mentored a team of 12 front-end developers, with a focus on professional growth and enhancing code quality.
 -   Championed, designed, and implemented a new data layer for real-time updates using WebSockets, Web Workers, IndexedDB, and Broadcast Channel, reducing network load by over 70% while maintaining backward compatibility.
 -   Developed new APIs for data access, ensuring data consistency and reliability in real-time operations.
@@ -48,6 +54,9 @@ Mark43 develops software for police departments worldwide, including real-time 9
 
 _September 2014 - October 2018_
 
+-   Created and implemented an O(n) algorithm for determining the density of points visible on a map.
+-   Created an O(n) algorithm for bucketing data points on a graph.
+-   Created a data layer that would find and load chunks of uncached data for virtualized lists.
 -   Led the development of the flagship React/Redux application, overseeing architecture and feature implementation.
 -   Engineered systems capable of handling tens of thousands of data points on maps, tables, and graphs with smooth animations.
 -   Created embeddable widgets for third-party websites using shared components from flagship apps.

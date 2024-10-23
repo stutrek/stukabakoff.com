@@ -5,6 +5,8 @@
     --mid-grey: #616a6d;
     --dark-grey: #485154;
     --face-opacity: 1;
+    /* biome-ignore lint/correctness/noUnknownProperty: <explanation> */
+    interpolate-size: allow-keywords;
 }
 @media (prefers-color-scheme: dark) {
     :root {

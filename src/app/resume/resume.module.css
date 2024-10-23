@@ -53,6 +53,53 @@
     border-top: 1px solid var(--light-grey);
 }
 
+.skills {
+    height: 400px;
+    transition: height 300ms ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.skills table {
+    margin-bottom: 30px;
+}
+.skillsCheckbox {
+    display: none;
+}
+.skillsCheckbox:checked + .skills {
+    height: auto;
+}
+.skillsLabel {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    transition: height 300ms ease-in-out;
+    background-image: linear-gradient(
+        0deg in oklab,
+        rgba(255, 255, 255, 0.989),
+        rgba(255, 255, 255, 0)
+    );
+}
+.skillsCheckbox:checked + .skills .skillsLabel {
+    height: 30px;
+}
+.skillsLabel label {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid var(--light-grey);
+    padding: 3px 6px;
+    border-radius: 10px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.skillsCheckbox + .skills .skillsLabel label:before {
+    content: "Show ";
+}
+.skillsCheckbox:checked + .skills .skillsLabel label:before {
+    content: "Collapse ";
+}
+
 .container table {
     border-collapse: collapse;
 }
