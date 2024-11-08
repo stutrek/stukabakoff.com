@@ -9,20 +9,8 @@ const nextConfig = {
     // Configure `pageExtensions` to include markdown and MDX files
     pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
     // Optionally, add any other Next.js config below
-    async rewrites() {
+    async redirects() {
         return [
-            {
-                source: '/umami.js',
-                destination: 'https://umami.stutrek.com/script.js',
-            },
-            {
-                source: '/api/collect',
-                destination: 'https://umami.stutrek.com/api/collect',
-            },
-            {
-                source: '/api/send',
-                destination: 'https://umami.stutrek.com/api/send',
-            },
             {
                 source: '/:path*',
                 has: [
@@ -58,6 +46,22 @@ const nextConfig = {
                 ],
                 destination: 'https://stukabakoff.com/:path*',
                 permanent: true,
+            },
+        ];
+    },
+    async rewrites() {
+        return [
+            {
+                source: '/umami.js',
+                destination: 'https://umami.stutrek.com/script.js',
+            },
+            {
+                source: '/api/collect',
+                destination: 'https://umami.stutrek.com/api/collect',
+            },
+            {
+                source: '/api/send',
+                destination: 'https://umami.stutrek.com/api/send',
             },
         ];
     },
