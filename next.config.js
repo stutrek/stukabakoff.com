@@ -23,6 +23,42 @@ const nextConfig = {
                 source: '/api/send',
                 destination: 'https://umami.stutrek.com/api/send',
             },
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'header',
+                        key: 'host',
+                        value: 'www.stukabakoff.com',
+                    },
+                ],
+                destination: 'https://stukabakoff.com/:path*',
+                permanent: true,
+            },
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'header',
+                        key: 'host',
+                        value: 'stutrek.com',
+                    },
+                ],
+                destination: 'https://stukabakoff.com/:path*',
+                permanent: true,
+            },
+            {
+                source: '/:path*',
+                has: [
+                    {
+                        type: 'header',
+                        key: 'host',
+                        value: 'www.stutrek.com',
+                    },
+                ],
+                destination: 'https://stukabakoff.com/:path*',
+                permanent: true,
+            },
         ];
     },
 };
