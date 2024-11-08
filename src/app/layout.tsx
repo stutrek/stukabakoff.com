@@ -23,6 +23,7 @@ export default function MainLayout({
                     async
                     defer
                     data-website-id="a532bc4e-7350-43af-b105-b2f31da13b49"
+                    data-domains="stutrek.com,stukabakoff.com"
                     src="/umami.js"
                 />
                 <Tracking />
