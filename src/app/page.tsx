@@ -1,3 +1,5 @@
+import { Link } from 'next-view-transitions';
+
 import face from '../../public/svg/self.svg';
 
 import githubLogo from '../../public/svg/github.svg';
@@ -5,7 +7,7 @@ import instagramLogo from '../../public/svg/instagram.svg';
 import linkedInLogo from '../../public/svg/linkedin.svg';
 import resumeIcon from '../../public/resume-icon.png';
 
-import Text from './text.md';
+import Text from './text.mdx';
 
 import styles from '../styles/Home.module.css';
 export default function Home() {
@@ -21,7 +23,9 @@ export default function Home() {
                     />
                 </div>
                 <div className={styles.name}>
-                    <h1>Stu Kabakoff</h1>
+                    <h1>
+                        <span>Stu Kabakoff</span>
+                    </h1>
                     <p>Software engineer with 20 years experience.</p>
                 </div>
                 <div className={styles.icons}>
@@ -56,9 +60,9 @@ export default function Home() {
                         <img src={linkedInLogo.src} alt="LinkedIn" />
                     </a>
                 </div>
-                <div className={styles.writing}>
+                <div className={styles.mainContent}>
                     <h2>
-                        <a href="/resume">
+                        <Link href="/resume">
                             <img
                                 className={styles.cvIcon}
                                 src={resumeIcon.src}
@@ -67,9 +71,11 @@ export default function Home() {
                                 alt=""
                             />
                             Full Resume
-                        </a>
+                        </Link>
                     </h2>
-                    <i>Open to new opportunities</i>
+                    <p>
+                        <i>Open to new opportunities</i>
+                    </p>
                     <Text />
                 </div>
             </div>

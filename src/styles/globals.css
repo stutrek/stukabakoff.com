@@ -49,3 +49,10 @@ a:hover {
     align-items: safe center;
     overflow: auto;
 }
+
+.open-source {
+    view-transition-name: open-source;
+}
+.technical-writing {
+    view-transition-name: technical-writing;
+}

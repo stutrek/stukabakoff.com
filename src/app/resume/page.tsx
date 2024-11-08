@@ -1,10 +1,11 @@
 'use client';
 import Skills from './skills.md';
-import TextFromHome from '../text.md';
+import TextFromHome from '../text.mdx';
 import Resume from './resume.mdx';
 import face from '../../../public/svg/self.svg';
 
 import styles from './resume.module.css';
+import { Link } from 'next-view-transitions';
 
 export default function Page() {
     const handleClick = () => {
@@ -20,18 +21,20 @@ export default function Page() {
         <div className={styles.container}>
             <div className={styles.header}>
                 <div className={styles.face}>
-                    <a href="/">
+                    <Link href="/">
                         <img
                             src={face.src}
                             width={face.width}
                             height={face.height}
                             alt=""
                         />
-                    </a>
+                    </Link>
                 </div>
-                <h1>Stu Kabakoff</h1>
+                <h1>
+                    <span>Stu Kabakoff</span>
+                </h1>
                 <div>
-                    <p>
+                    <p className={styles.subtext}>
                         Software engineer with 20 years experience.
                         <br />
                         stukabakoff@gmail.com

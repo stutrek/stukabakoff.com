@@ -19,9 +19,13 @@
     margin: 0;
     font-size: 4em;
 }
+.name h1 span {
+    view-transition-name: name;
+}
 .name p {
     margin: 0;
     padding: 0.5em 0;
+    view-transition-name: subhead;
 }
 
 .face {
@@ -30,6 +34,7 @@
     opacity: var(--face-opacity);
 }
 .face img {
+    view-transition-name: face;
     width: 15em;
     height: auto;
 }
@@ -68,15 +73,15 @@
     display: block;
 }
 
-.writing {
+.mainContent {
     max-width: 400px;
     padding: 0 20px;
     grid-area: d;
 }
-.writing h2:first-child {
+.mainContent h2:first-child {
     margin-top: 0;
 }
-.writing h3 {
+.mainContent h3 {
     color: #333333;
     margin: 0;
 }
@@ -106,6 +111,7 @@
     margin-right: 5px;
     vertical-align: bottom;
     opacity: 0.5;
+    view-transition-name: middle-ground;
 }
 
 @media (max-width: 750px) {

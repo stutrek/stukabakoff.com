@@ -24,12 +24,19 @@
 .header img {
     height: 100px;
     width: 100px;
+    view-transition-name: face;
 }
 .header h1 {
     margin: 0;
 }
+.header h1 span {
+    view-transition-name: name;
+}
 .header p {
     margin: 0 0 1.2em 0;
+}
+.subtext {
+    view-transition-name: subhead;
 }
 .resume {
     line-height: 1.4;
@@ -58,6 +65,7 @@
     transition: height 300ms ease-in-out;
     position: relative;
     overflow: hidden;
+    view-transition-name: middle-ground;
 }
 .skillsMarker {
     transform: translateY(350px);
