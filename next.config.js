@@ -53,15 +53,15 @@ const nextConfig = {
         return [
             {
                 source: '/umami.js',
-                destination: 'https://umami.stutrek.com/script.js',
+                destination: 'http://umami.web:3000/script.js',
             },
             {
                 source: '/api/collect',
-                destination: 'https://umami.stutrek.com/api/collect',
+                destination: 'http://umami.web:3000/api/collect',
             },
             {
                 source: '/api/send',
-                destination: 'https://umami.stutrek.com/api/send',
+                destination: 'http://umami.web:3000/api/send',
             },
         ];
     },
