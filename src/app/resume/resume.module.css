@@ -6,6 +6,8 @@
     --star-shadow: #463901;
 }
 
+
+
 .header {
     display: grid;
     grid-template:
@@ -13,7 +15,7 @@
         "a c";
     align-content: start;
     justify-content: start;
-    border-bottom: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--border);
     padding: 20px 0;
 }
 
@@ -25,15 +27,18 @@
     height: 100px;
     width: 100px;
     view-transition-name: face;
+    filter: var(--face-filter, none);
 }
 .header h1 {
     margin: 0;
+    color: var(--foreground);
 }
 .header h1 span {
     view-transition-name: name;
 }
 .header p {
     margin: 0 0 1.2em 0;
+    color: var(--muted-foreground);
 }
 .subtext {
     view-transition-name: subhead;
@@ -43,7 +48,7 @@
 }
 .container p,
 .container ul {
-    color: var(--dark-grey);
+    color: var(--muted-foreground);
 }
 .resume ul {
     padding: 0;
@@ -54,10 +59,7 @@
 }
 .container h3:not(:first-of-type) {
     padding: 0 0 0;
-}
-.container hr {
-    border: 0;
-    border-top: 1px solid var(--light-grey);
+    color: var(--foreground);
 }
 
 .skills {
@@ -87,9 +89,9 @@
     width: 100%;
     transition: height 300ms ease-in-out;
     background-image: linear-gradient(
-        0deg in oklab,
-        rgba(255, 255, 255, 0.989),
-        rgba(255, 255, 255, 0)
+        0deg,
+        var(--background),
+        transparent 100%
     );
 }
 .skillsCheckbox:checked + .skills .skillsLabel {
@@ -98,10 +100,11 @@
 .skillsLabel label {
     position: absolute;
     bottom: 0;
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--border);
     padding: 3px 6px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--background);
+    color: var(--foreground);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -121,14 +124,16 @@
     padding: 0 0.5em 0.25em 0;
 }
 .container tr:has(strong) td {
-    border-top: 1px solid var(--light-grey);
+    border-top: 1px solid var(--border);
 }
 .container td strong {
     margin-top: 0.25em;
     display: block;
+    color: var(--foreground);
 }
 .container td:first-child {
     white-space: nowrap;
+    color: var(--foreground);
 }
 .container td:nth-child(2) {
     font-size: 0.9em;
@@ -145,15 +150,20 @@
         -1.1px 0px 0.25px var(--star-shadow);
 }
 
+
+
 @media (prefers-color-scheme: dark) {
+    .container {
+        --star-shadow: #1f2937;
+    }
     .container td:nth-child(2) {
-        color: #887008;
+        color: #fbbf24;
         text-shadow: none;
     }
 }
 
 .container td:nth-child(3) {
-    color: var(--mid-grey);
+    color: var(--muted-foreground);
 }
 @media (max-width: 550px) {
     /* .container thead tr * {

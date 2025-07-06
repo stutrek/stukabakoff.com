@@ -16,6 +16,17 @@ export default function MainLayout({
                         name="description"
                         content="Code, art, and other hobbies by Stu Kabakoff"
                     />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                (function() {
+                                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                                        document.documentElement.setAttribute('data-theme', 'dark');
+                                    }
+                                })();
+                            `,
+                        }}
+                    />
                 </head>
                 <link rel="icon" href="/self.png" />
                 <body>{children}</body>
